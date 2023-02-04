@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2? family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format(opentype);
+    font-weight: normal;
+}
+
+:root {   /* Raiz da arvore do documento - VARIÁVEIS */ 
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursiva;
+    --fonte-android: 'Android', cursive;
+}
+
+/* Configuração global para todos os alementos da página*/
+* {  
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    }
+    
+#div1, #div3 {
+    height: 100vh;
+    width: 10%;
+    }
+    
+#div2 {
+    height: 100vh;
+    width: 60%;
+    }
+  
+header > div > h1 {
+    color: white;
+    font-family: var(--fonte-android);
+    font-size: 3em;
+    font-weight: normal;
+    text-align: center;
+    text-shadow:  5px 5px 5px #031b1198;
+}
+
+header > div > p {
+    font-family: var(--fonte-android);
+    font-size: 1.5em;
+    color: white;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow:  3px 3px 3px #2046367a;
+}
+
+ul {
+    list-style: none;
+    margin: 1px;
+    padding: 1px;
+    overflow: hidden;   /* isto é um ESTOURO ESCONDIDO */
+    background-color: #202020;
+}
+
+li {
+    float: left;
+}
+
+li > a {
+    font-size: 20px; /*  Fonte do Menu */
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+}
+
+li > a:hover {
+    background-color: #5255529f;
+} 
+
+nav, a {
+    color: rgb(22, 22, 22);
+    padding: 1px;
+    border-radius: 3px;     /* arredonda as bordas do nav */
+    text-decoration: none;  /* retira o sublinhado */
+    font-family: var(--fonte-android);
+    font-size: 1em;
+    transition-duration: 0.5s;  /* ao passar o mouse faz uma transição de segundos */
+}
+
+nav, a:hover {
+    background-color: var(--cor3);
+    color: var(--cor2);
+}
+
+/* Corpo da página */
+
+main {
+    background-color: #d8dddb;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+main > h1 {
+    font-family: var(--fonte-android);
+    font-size: 2em;
+    padding-bottom: 15px;
+}
+
+main > h2 {
+    color: #063d1e;
+    font-family: var(--fonte-android);
+    font-size: 1.5em;
+    padding-bottom: 15px;
+}
+
+main, p {
+    text-align: justify;
+    font-size: 18px;
+    padding: 10px;    
+}
+
+main, .img1 {
+    text-align: center;
+}
+
+main, .p1 {
+    font-size: 20px;
+    text-align: justify;
+    padding: 10px;
+}
+
+.identidade, 
+.historico,
+.missao,
+.visao,
+.valor {
+    border: 5px solid yellow;
+    background-color: #83e1ad;
+    padding: 10px;
+}
+
+.historico > .historico1, .historico2 {
+    display: inline-block;
+}
+
+.historico > .historico2 {
+    width: 80%;
+    font-size: 18px;
+}
+
+.missao > .missao1, .missao2 {
+    display: inline-block;
+}
+
+.missao > .missao2 {
+    width: 80%;
+    font-size: 18px;
+}
+
+.visao > .visao1, .visao2 {
+    display: inline-block;
+}
+
+.visao > .visao2 {
+    width: 80%;
+    font-size: 18px;
+}
+
+.valor > .valor1, .valor2 {
+    display: inline-block;
+}
+
+.valor > .valor2 {
+    width: 80%;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #202020;
+    padding: 0px;
+}
+
+footer > p {
+    font-family: var(--fonte-android);
+    text-align: center;
+    color: var(--cor0);
+}
